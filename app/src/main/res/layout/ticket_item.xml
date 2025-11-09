@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginTop="16dp"
+    app:cardBackgroundColor="#25233A"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <View
+            android:id="@+id/priority_dot"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/priority_dot_red"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/avatar_letter"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/avatar_background"
+            android:gravity="center"
+            android:text="K"
+            android:textColor="#100F1C"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/avatar_letter"
+            app:layout_constraintEnd_toStartOf="@id/priority_dot"
+            app:layout_constraintStart_toEndOf="@id/avatar_letter"
+            app:layout_constraintTop_toTopOf="@id/avatar_letter"
+            tools:text="Kaka" />
+
+        <ImageView
+            android:id="@+id/icon_info"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_info"
+            app:tint="#B0AEC3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/avatar_letter" />
+
+        <TextView
+            android:id="@+id/ticket_title_and_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/icon_info"
+            app:layout_constraintTop_toTopOf="@id/icon_info"
+            tools:text="Só queria deixar o sistema mais rápido. Agora não temos mais clientes." />
+
+        <ImageView
+            android:id="@+id/icon_status"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_list"
+            app:tint="#B0AEC3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ticket_title_and_desc" />
+
+        <TextView
+            android:id="@+id/ticket_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@id/icon_status"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/icon_status"
+            app:layout_constraintTop_toTopOf="@id/icon_status"
+            tools:text="Em atividade" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_analytics"
+        android:icon="@drawable/ic_baseline_show_chart_24"
+        android:title="Analytics" />
+    <item
+        android:id="@+id/nav_add"
+        android:icon="@drawable/ic_baseline_add_circle_outline_24"
+        android:title="Novo" />
+    <item
+        android:id="@+id/nav_edit"
+        android:icon="@drawable/ic_edit"
+        android:title="Chamados" />
+    <item
+        android:id="@+id/nav_list"
+        android:icon="@drawable/ic_list"
+        android:title="Listas" />
+</menu>

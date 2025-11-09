@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categoria_options">
+        <item>Hardware</item>
+        <item>Software</item>
+        <item>Rede</item>
+        <item>Outros</item>
+    </string-array>
+</resources>
